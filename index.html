@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="Седона, путешествие">
+    <meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего">
+
     <title> SEDONA </title>
     
   </head>
@@ -13,7 +16,7 @@
     </a>
     <ul>
       <li> 
-        <a href="#"> ИНФОРМАЦИЯ </a> 
+        <a href="#info"> ИНФОРМАЦИЯ </a> 
       </li>
       <li> 
         <a href="#"> ФОТО И ВИДЕО </a>
@@ -29,8 +32,8 @@
 
 <main>
   <img src="img/002welcome.png" width="457" height="351" alt="Welcome to Sedona">
-  
-   <div>
+
+   <div id="info">
      <h3> 
      СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, <br>
      ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО! 
@@ -160,22 +163,32 @@
      <br>
      <span>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</span>
    </p>
-   <p> 
+
+   <!-- Здесь же тоже задействован JS? -->
+  <details open="open">
+   <summary> 
      ПОИСК ГОСТИНИЦЫ В СЕДОНЕ 
-   </p>
+   </summary>
    <p> 
      ДАТА ЗАЕЗДА: 
+     <input type="date" required>
+     <img src="calendar.svg" alt="Календарь">
    </p>
    <p> 
      ДАТА ВЫЕЗДА: 
+     <input type="date" required> 
+     <img src="calendar.svg" alt="Календарь">
    </p>
    <p> 
      ВЗРОСЛЫЕ: 
+     <input type="number" min="1" max="20" step="1">
    </p>
    <p> 
      ДЕТИ: 
+     <input type="number" min="0" max="19" step="1">
    </p>
    <button type="submit"> НАЙТИ </button>
+  </details>
    <!-- Здесь однажды будет интерактивная карта на JS -->
  </main>
  
