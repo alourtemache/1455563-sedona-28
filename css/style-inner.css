@@ -1,0 +1,81 @@
+/* Шапка */
+
+header ul { 
+    list-style-type: none;
+    color: #000000;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 0 1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+ 
+  /* Основная часть */
+p div {
+    color: #333333;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    padding: 0 1px;
+    text-align: left;
+    text-transform: uppercase; 
+}
+
+ strong div {
+    color: #000000;
+    font-family: PT Sans, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 0 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+a div {
+    color: #ffffff;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 0 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+button {
+    color: #ffffff;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 0 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+  /* Подвал */
+footer {
+    color: #000000;
+    background-color: #ffffff;
+    list-style-type: none;
+    font-family: PT Sans, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 0 1px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+ a footer {
+    color: #000000;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 26px;
+    padding: 0 1px;
+    text-align: left;
+    text-transform: uppercase; 
+ }
