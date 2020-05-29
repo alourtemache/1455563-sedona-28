@@ -31,9 +31,9 @@
   </header>
 
 <main>
-  <form>
+  <form class="infrastructure">
    <ul> 
-     <li>
+     <li class="sort">
        ИНФРАСТРУКТУРА:
      </li>
      <li>
@@ -56,9 +56,9 @@
      </li>
    </ul>
   </form>
-  <form>
+  <form class="housing">
    <ul> 
-     <li>
+     <li class="sort">
        ТИП ЖИЛЬЯ:
      </li>
      <li>
@@ -82,20 +82,22 @@
    </ul>
   </form>
   <form>
-     <p> 
+     <p class="price-range-title"> 
        СТОИМОСТЬ В СУТКИ (Р):
      </p>
      <br>
+     <div class="price-range">
      <label for="minimal">
        ОТ 
        <input type="number" name="minimal" id="minimal" value="0">
      </label>
-     <input type="range" min="0" max="3000" step="1000">
      <label for="maximum">
        ДО 
        <input type="number" name="maximum" id="maximum" value="3000">
      </label>
-   <button type="submit"> 
+     </div>
+     <input type="range" min="0" max="3000" step="1000">
+   <button type="submit" class="show"> 
    ПОКАЗАТЬ
    </button>
   </form>
@@ -214,4 +216,3 @@
   </footer>
   </body>
 </html>
-
