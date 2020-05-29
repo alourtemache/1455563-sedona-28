@@ -2,7 +2,7 @@ body {
    background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
  }
 
-form {
+.search-hotel {
   color: #000000;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 14px;
@@ -24,7 +24,7 @@ form {
  text-align: center;
  text-transform: uppercase;
 }
-h3 {
+.advantages {
    color: #ffffff;
    font-family: PT Sans, Arial, sans-serif;
    font-size: 21px;
@@ -229,6 +229,7 @@ h3 {
    text-align: center;
    text-transform: uppercase; 
  }
+
 .inn {
   color: #333333;
   font-family: PT Sans, Arial, sans-serif;
