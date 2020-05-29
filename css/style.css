@@ -1,23 +1,148 @@
 body {
-    background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
-  }
+   background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
+ }
 
 form {
-   color: #000000;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 14px;
-   font-weight: bold;
-   line-height: 26px;
-   padding: 0 1px;
-   text-align: left;
-   text-transform: uppercase; 
-}
-
-.page-header { 
-  list-style-type: none;
   color: #000000;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase; 
+}
+
+.page-header { 
+ list-style-type: none;
+ color: #000000;
+ font-family: PT Sans, Arial, sans-serif;
+ font-size: 14px;
+ font-weight: bold;
+ line-height: 26px;
+ padding: 0 1px;
+ text-align: center;
+ text-transform: uppercase;
+}
+h3 {
+   color: #ffffff;
+   font-family: PT Sans, Arial, sans-serif;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 26px;
+   padding: 0 1px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+
+/* Основная часть */
+.main-page {
+   font-family: PT Sans, Arial, sans-serif;
+}
+
+.town {
+  color: #000000;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.reasons {
+  color: #333333;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase; 
+}
+.digit {
+   color: #ffffff;
+   font-family: PT Sans, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 21px;
+   padding: 0 1px;
+   text-align: center;
+}
+.touristless {
+   color: #ffffff;
+   font-family: PT Sans, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 21px;
+   padding: 0 1px;
+   text-align: center;
+}
+.title {
+   color: #000000;
+   font-family: PT Sans, Arial, sans-serif;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 21px;
+   padding: 0 1px;
+   text-align: center;
+   text-transform: uppercase;
+}
+.description {
+   color: #333333;
+   font-family: PT Sans, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 21px;
+   padding: 0 1px;
+   text-align: center;
+   text-transform: uppercase;
+}
+.interested {
+ color: #000000;
+ font-family: PT Sans, Arial, sans-serif;
+ font-size: 30px;
+ font-weight: bold;
+ line-height: 24px;
+ padding: 0 1px;
+ text-align: center;
+ text-transform: uppercase;
+}
+.order {
+   color: #333333;
+   font-family: PT Sans, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 21px;
+   padding: 0 1px;
+   text-align: center;
+}
+.arriving {
+  color: #333333;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase; 
+}
+
+.search-inn {
+  color: #ffffff;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.find {
+  color: #ffffff;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   padding: 0 1px;
@@ -25,99 +150,33 @@ form {
   text-transform: uppercase;
 }
 
-
-/* Основная часть */
-
-.town {
-   color: #000000;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 26px;
-   padding: 0 1px;
-   text-align: center;
-   text-transform: uppercase;
-}
-.reasons {
-   color: #333333;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 14px;
-   font-weight: normal;
-   line-height: 26px;
-   padding: 0 1px;
-   text-align: center;
-   text-transform: uppercase; 
-}
-.interested {
+/* Подвал */
+.page-footer {
   color: #000000;
+  background-color: #ffffff;
+  list-style-type: none;
   font-family: PT Sans, Arial, sans-serif;
-  font-size: 30px;
+  font-size: 21px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 26px;
   padding: 0 1px;
   text-align: center;
   text-transform: uppercase;
 }
-.arriving {
-   color: #333333;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 14px;
-   font-weight: normal;
-   line-height: 24px;
-   padding: 0 1px;
-   text-align: center;
-   text-transform: uppercase; 
-}
-
-.search-inn {
-   color: #ffffff;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 26px;
-   padding: 0 1px;
-   text-align: center;
-   text-transform: uppercase;
-}
-.find {
-   color: #ffffff;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 26px;
-   padding: 0 1px;
-   text-align: center;
-   text-transform: uppercase;
-}
-
-/* Подвал */
-.page-footer {
-   color: #000000;
-   background-color: #ffffff;
-   list-style-type: none;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 26px;
-   padding: 0 1px;
-   text-align: center;
-   text-transform: uppercase;
-}
 .academy {
-   color: #000000;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 14px;
-   font-weight: normal;
-   line-height: 26px;
-   padding: 0 1px;
-   text-align: left;
-   text-transform: uppercase; 
+  color: #000000;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase; 
 }
 
 /* Контент для взрослых, он же - внутренняя страница с отелями */
-
-.inn {
-   color: #333333;
+.infrastructure {
+   color: #ffffff;
    font-family: PT Sans, Arial, sans-serif;
    font-size: 14px;
    font-weight: normal;
@@ -126,20 +185,42 @@ form {
    text-align: left;
    text-transform: uppercase; 
 }
-
-.hotel-name {
-   color: #000000;
+.housing {
+   color: #ffffff;
    font-family: PT Sans, Arial, sans-serif;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 26px;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 21px;
    padding: 0 1px;
    text-align: left;
-   text-transform: uppercase;
+   text-transform: uppercase; 
 }
-
-.rating {
-   color: #666666;
+.sort {
+   font-size: 16px;
+   font-weight: bold;
+}
+.price-range-title {
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 21px;
+}
+.price-range {
+   position: relative;
+   height: 36px;
+   margin-bottom: 20px;
+   font-size: 0;
+   border: 2px solid #ffffff;
+   border-radius: 2px;
+}
+.price-range label {
+   display: inline-block;
+   font-size: 14px;
+   line-height: 38px;
+   vertical-align: top;
+   cursor: pointer;
+ }
+ .show {
+   color: #ffffff;
    font-family: PT Sans, Arial, sans-serif;
    font-size: 14px;
    font-weight: normal;
@@ -147,26 +228,57 @@ form {
    padding: 0 1px;
    text-align: center;
    text-transform: uppercase; 
+ }
+.inn {
+  color: #333333;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase; 
+}
+
+.hotel-name {
+  color: #000000;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.rating {
+  color: #666666;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase; 
 } 
 
 .details {
-   color: #ffffff;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 14px;
-   font-weight: bold;
-   line-height: 21px;
-   padding: 0 1px;
-   text-align: left;
-   text-transform: uppercase;
+  color: #ffffff;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase;
 }
 .booking {
-   color: #ffffff;
-   font-family: PT Sans, Arial, sans-serif;
-   font-size: 14px;
-   font-weight: bold;
-   line-height: 21px;
-   padding: 0 1px;
-   text-align: left;
-   text-transform: uppercase;
+  color: #ffffff;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase;
 }
-
