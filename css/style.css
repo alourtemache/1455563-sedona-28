@@ -212,7 +212,8 @@ body {
    border: 2px solid #ffffff;
    border-radius: 2px;
 }
-.price-range label {
+.minimal,
+.maximal {
    display: inline-block;
    font-size: 14px;
    line-height: 38px;
@@ -230,7 +231,7 @@ body {
    text-transform: uppercase; 
  }
 
-.inn {
+.inner {
   color: #333333;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 14px;
