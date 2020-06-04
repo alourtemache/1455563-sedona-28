@@ -1,220 +1,226 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Седона, путешествие">
     <meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title> SEDONA </title>
-    
+
   </head>
-  
+
   <body>
-  <header class="page-header"> 
-    <a href="index.html" class="main-page-logo">  
-       <img src="img/000logo.png" width="138" height="70" alt="SEDONA">
-    </a>
-    <ul>
-    <nav class="navigation">
-      <li> 
-        <a href="#"> ИНФОРМАЦИЯ </a> 
-      </li>
-      <li> 
-        <a href="#"> ФОТО И ВИДЕО </a>
-      </li>
-      <li>  
-        <a href="#">КАРТА ШТАТА</a> 
-      </li>
-      <li> 
-        <a href="inner.html">ГОСТИНИЦЫ </a>
-      </li>
-    </nav>
-    </ul>
-  </header>
+    <div class="container">
+      <header class="page-header">
+        <a href="index.html" class="main-page-logo">
+          <img src="img/000logo.png" width="138" height="70" alt="SEDONA">
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a href="#"> ИНФОРМАЦИЯ </a>
+            </li>
+            <li>
+              <a href="#"> ФОТО И ВИДЕО </a>
+            </li>
+            <li>
+              <a href="#">КАРТА ШТАТА</a>
+            </li>
+            <li>
+              <a href="inner.html">ГОСТИНИЦЫ </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-<main>
-  <form class="infrastructure">
-   <ul> 
-     <li class="sort">
-       ИНФРАСТРУКТУРА:
-     </li>
-     <li>
-       <input type="checkbox" id="pool" checked>
-       <label for="pool">
-         БАССЕЙН
-       </label> 
-     </li>
-     <li> 
-       <input type="checkbox" id="parking">
-       <label for="parking">
-         ПАРКОВКА
-       </label>
-     </li>
-     <li>
-       <input type="checkbox" id="wifi">
-       <label for="wifi">
-         WI-FI
-       </label>
-     </li>
-   </ul>
-  </form>
-  <form class="housing">
-   <ul> 
-     <li class="sort">
-       ТИП ЖИЛЬЯ:
-     </li>
-     <li>
-       <input type="checkbox" id="inn-hotel" checked>
-       <label for="inn-hotel">
-         ГОСТИНИЦА
-       </label>
-     </li>
-     <li>
-       <input type="checkbox" id="motel" checked>
-         <label for="motel">
-           МОТЕЛЬ
-         </label>
-     </li>
-     <li>
-       <input type="checkbox" id="apartment" checked>
-       <label for="apartment">
-         АПАРТАМЕНТЫ
-       </label>
-     </li>
-   </ul>
-  </form>
-  <form>
-     <p class="price-range-title"> 
-       СТОИМОСТЬ В СУТКИ (Р):
-     </p>
-     <br>
-     <div class="price-range">
-     <label for="minimal" class="minimal">
-       ОТ 
-       <input type="number" name="minimal" id="minimal" value="0">
-     </label>
-     <label for="maximum" class="maximal">
-       ДО 
-       <input type="number" name="maximum" id="maximum" value="3000">
-     </label>
-     </div>
-     <input type="range" min="0" max="3000" step="1000">
-   <button type="submit" class="show"> 
-   ПОКАЗАТЬ
-   </button>
-  </form>
-  
-  <form class="found">
-   <p>
-   НАЙДЕНО:
-   </p>
-   <ul> 
-     <li>
-       СОРТИРОВКА:
-     </li>
-     <li>
-       <a href="#">
-         ПО ЦЕНЕ
-       </a>
-     </li>
-     <li>
-       <a href="#">
-         ПО ТИПУ
-       </a>
-     </li>
-     <li>
-       <a href="#">
-         ПО РЕЙТИНГУ
-       </a>
-    </li>
-   </ul>
-  </form>
+      <main>
+        <form class="infrastructure">
+          <ul>
+            <li class="sort">
+              ИНФРАСТРУКТУРА:
+            </li>
+            <li>
+              <input type="checkbox" id="pool" checked>
+              <label for="pool">
+                БАССЕЙН
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="parking">
+              <label for="parking">
+                ПАРКОВКА
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="wifi">
+              <label for="wifi">
+                WI-FI
+              </label>
+            </li>
+          </ul>
+        </form>
+        <form class="housing">
+          <ul>
+            <li class="sort">
+              ТИП ЖИЛЬЯ:
+            </li>
+            <li>
+              <input type="checkbox" id="inn-hotel" checked>
+              <label for="inn-hotel">
+                ГОСТИНИЦА
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="motel" checked>
+              <label for="motel">
+                МОТЕЛЬ
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="apartment" checked>
+              <label for="apartment">
+                АПАРТАМЕНТЫ
+              </label>
+            </li>
+          </ul>
+        </form>
+        <form>
+          <p class="price-range-title">
+            СТОИМОСТЬ В СУТКИ (Р):
+          </p>
+          <br>
+          <div class="price-range">
+            <label for="minimal" class="minimal">
+              ОТ
+              <input type="number" name="minimal" id="minimal" value="0">
+            </label>
+            <label for="maximum" class="maximal">
+              ДО
+              <input type="number" name="maximum" id="maximum" value="3000">
+            </label>
+          </div>
+          <input type="range" min="0" max="3000" step="1000">
+          <button type="submit" class="show">
+            ПОКАЗАТЬ
+          </button>
+        </form>
 
-   <div class="inner">
-     <img src="img/H-amara.png" width="135" height="90" alt="Photo Amara Resort & Spa">
-     <p class="hotel-name">
-       <strong>  AMARA RESORT & SPA </strong> 
-     </p>
-     <img src="star.png" width="19" height="17" alt="4 звезды">
-     <img src="star.png" width="19" height="17" alt="#">
-     <img src="star.png" width="19" height="17" alt="#">
-     <img src="star.png" width="19" height="17" alt="#">
-     <p> 
-       ГОСТИНИЦА ОТ 4000 Р. 
-     </p>
-     <a href="#" class="details"> ПОДРОБНЕЕ </a>
-     <button type="submit" class="booking"> ЗАБРОНИРОВАТЬ </button> 
-     <p class="rating">
-       РЕЙТИНГ 8,5
-     </p>
-   </div>
+        <form class="found">
+          <p>
+            НАЙДЕНО:
+          </p>
+          <ul>
+            <li>
+              СОРТИРОВКА:
+            </li>
+            <li>
+              <a href="#">
+                ПО ЦЕНЕ
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                ПО ТИПУ
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                ПО РЕЙТИНГУ
+              </a>
+            </li>
+          </ul>
+        </form>
 
-   <div class="inner">
-     <img src="img/H-inn.png" width="135" height="90" alt="Photo Desert Quail Inn">
-     <p class="hotel-name">
-       <strong>  DESERT QUAIL INN </strong> 
-     </p>
-     <img src="star.png" width="19" height="17" alt="3 звезды">
-     <img src="star.png" width="19" height="17" alt="#">
-     <img src="star.png" width="19" height="17" alt="#">
-     <p> 
-       МОТЕЛЬ ОТ 3000 Р. 
-     </p>
-     <a href="#" class="details"> ПОДРОБНЕЕ </a>
-     <button type="submit" class="booking"> ЗАБРОНИРОВАТЬ </button> 
-     <p class="rating">
-       РЕЙТИНГ 8,9
-     </p>
-   </div>
+        <div class="inner">
+          <img src="img/H-amara.png" width="135" height="90" alt="Photo Amara Resort & Spa">
+          <p class="hotel-name">
+            <strong> AMARA RESORT & SPA </strong>
+          </p>
+          <img src="star.png" width="19" height="17" alt="4 звезды">
+          <img src="star.png" width="19" height="17" alt="#">
+          <img src="star.png" width="19" height="17" alt="#">
+          <img src="star.png" width="19" height="17" alt="#">
+          <p>
+            ГОСТИНИЦА ОТ 4000 Р.
+          </p>
+          <a href="#" class="details"> ПОДРОБНЕЕ </a>
+          <button type="submit" class="booking"> ЗАБРОНИРОВАТЬ </button>
+          <p class="rating">
+            РЕЙТИНГ 8,5
+          </p>
+        </div>
 
-   <div class="inner">
-     <img src="img/H-diablo.png" width="135" height="90" alt="Photo Villas at Poco Diablo">
-     <p class="hotel-name"> 
-     <strong> VILLAS AT POCO DIABLO </strong>
-     </p> 
-     <img src="star.png" width="19" height="17" alt="2 звезды">
-     <img src="star.png" width="19" height="17" alt="#">
-     <p> 
-       АПАРТАМЕНТЫ ОТ 2000 Р. 
-     </p>
-     <a href="#" class="details"> ПОДРОБНЕЕ </a>
-     <button type="submit" class="booking"> ЗАБРОНИРОВАТЬ </button> 
-     <p class="rating">
-       РЕЙТИНГ 9,2
-     </p>
-   </div>
- </main>
- 
- 
- <footer class="page-footer">
-   <p> 
-    #VISITSEDONA 
-    <br> 
-     ТЕЛ: 
-     <a href="tel:+74956660266">+7(495) 666-02-66</a>
-   </p> 
-  <ul class="social">
-    <li>
-      <a href="twitter.com"> 
-        <img src="img/f-twitter.svg" width="17" height="17" alt="Twitter" aria-label="Twitter page">
-      </a>
-    </li>
-    <li>
-      <a href="facebook.com"> 
-        <img src="img/f-fb-icon.svg" width="12" height="22" alt="Facebook" aria-label="Facebook page"> 
-      </a>
-    </li>
-    <li>
-      <a href="youtube.com"> 
-        <img src="img/f-youtube.svg" width="20" height="16" alt="YouTube" aria-label="YouTube channel"> 
-      </a>
-    </li>
-    <li>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy"> WEBSITE BY 
-        <img src="img/f-logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy"> 
-      </a>
-    </li>
-  </ul>
-  </footer>
+        <div class="inner">
+          <img src="img/H-inn.png" width="135" height="90" alt="Photo Desert Quail Inn">
+          <p class="hotel-name">
+            <strong> DESERT QUAIL INN </strong>
+          </p>
+          <img src="star.png" width="19" height="17" alt="3 звезды">
+          <img src="star.png" width="19" height="17" alt="#">
+          <img src="star.png" width="19" height="17" alt="#">
+          <p>
+            МОТЕЛЬ ОТ 3000 Р.
+          </p>
+          <a href="#" class="details"> ПОДРОБНЕЕ </a>
+          <button type="submit" class="booking"> ЗАБРОНИРОВАТЬ </button>
+          <p class="rating">
+            РЕЙТИНГ 8,9
+          </p>
+        </div>
+
+        <div class="inner">
+          <img src="img/H-diablo.png" width="135" height="90" alt="Photo Villas at Poco Diablo">
+          <p class="hotel-name">
+            <strong> VILLAS AT POCO DIABLO </strong>
+          </p>
+          <img src="star.png" width="19" height="17" alt="2 звезды">
+          <img src="star.png" width="19" height="17" alt="#">
+          <p>
+            АПАРТАМЕНТЫ ОТ 2000 Р.
+          </p>
+          <a href="#" class="details"> ПОДРОБНЕЕ </a>
+          <button type="submit" class="booking"> ЗАБРОНИРОВАТЬ </button>
+          <p class="rating">
+            РЕЙТИНГ 9,2
+          </p>
+        </div>
+      </main>
+
+
+      <footer class="page-footer">
+        <p>
+          #VISITSEDONA
+          <br>
+          ТЕЛ:
+          <a href="tel:+74956660266">+7(495) 666-02-66</a>
+        </p>
+        <ul class="social">
+          <li>
+            <a href="twitter.com">
+              <img src="img/f-twitter.svg" width="17" height="17" alt="Twitter" aria-label="Twitter page">
+            </a>
+          </li>
+          <li>
+            <a href="facebook.com">
+              <img src="img/f-fb-icon.svg" width="12" height="22" alt="Facebook" aria-label="Facebook page">
+            </a>
+          </li>
+          <li>
+            <a href="youtube.com">
+              <img src="img/f-youtube.svg" width="20" height="16" alt="YouTube" aria-label="YouTube channel">
+            </a>
+          </li>
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy"> WEBSITE BY
+              <img src="img/f-logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy">
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
+
 </html>
+
