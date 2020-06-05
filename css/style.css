@@ -199,7 +199,8 @@ text-transform: uppercase;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  align-items: space-between;
+  justify-content: space-between;
+  align-items: baseline;
   align-content: center;
   margin: 10px;
 }
