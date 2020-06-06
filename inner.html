@@ -36,77 +36,77 @@
       </header>
 
       <main class="inner-page">
-      <div class="checkbox-choice">
-        <form class="infrastructure">
-          <ul>
-            <li class="sort">
-              ИНФРАСТРУКТУРА:
-            </li>
-            <li>
-              <input type="checkbox" id="pool" checked>
-              <label for="pool">
-                БАССЕЙН
+        <div class="checkbox-choice">
+          <form class="infrastructure">
+            <ul>
+              <li class="sort">
+                ИНФРАСТРУКТУРА:
+              </li>
+              <li>
+                <input type="checkbox" id="pool" checked>
+                <label for="pool">
+                  БАССЕЙН
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="parking">
+                <label for="parking">
+                  ПАРКОВКА
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="wifi">
+                <label for="wifi">
+                  WI-FI
+                </label>
+              </li>
+            </ul>
+          </form>
+          <form class="housing">
+            <ul>
+              <li class="sort">
+                ТИП ЖИЛЬЯ:
+              </li>
+              <li>
+                <input type="checkbox" id="inn-hotel" checked>
+                <label for="inn-hotel">
+                  ГОСТИНИЦА
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="motel" checked>
+                <label for="motel">
+                  МОТЕЛЬ
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="apartment" checked>
+                <label for="apartment">
+                  АПАРТАМЕНТЫ
+                </label>
+              </li>
+            </ul>
+          </form>
+          <form>
+            <p class="price-range-title">
+              СТОИМОСТЬ В СУТКИ (Р):
+            </p>
+            <br>
+            <div class="price-range">
+              <label for="minimal" class="minimal">
+                ОТ
+                <input type="number" name="minimal" id="minimal" value="0">
               </label>
-            </li>
-            <li>
-              <input type="checkbox" id="parking">
-              <label for="parking">
-                ПАРКОВКА
+              <label for="maximum" class="maximal">
+                ДО
+                <input type="number" name="maximum" id="maximum" value="3000">
               </label>
-            </li>
-            <li>
-              <input type="checkbox" id="wifi">
-              <label for="wifi">
-                WI-FI
-              </label>
-            </li>
-          </ul>
-        </form>
-        <form class="housing">
-          <ul>
-            <li class="sort">
-              ТИП ЖИЛЬЯ:
-            </li>
-            <li>
-              <input type="checkbox" id="inn-hotel" checked>
-              <label for="inn-hotel">
-                ГОСТИНИЦА
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" id="motel" checked>
-              <label for="motel">
-                МОТЕЛЬ
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" id="apartment" checked>
-              <label for="apartment">
-                АПАРТАМЕНТЫ
-              </label>
-            </li>
-          </ul>
-        </form>
-        <form>
-          <p class="price-range-title">
-            СТОИМОСТЬ В СУТКИ (Р):
-          </p>
-          <br>
-          <div class="price-range">
-            <label for="minimal" class="minimal">
-              ОТ
-              <input type="number" name="minimal" id="minimal" value="0">
-            </label>
-            <label for="maximum" class="maximal">
-              ДО
-              <input type="number" name="maximum" id="maximum" value="3000">
-            </label>
-          </div>
-          <input type="range" min="0" max="3000" step="1000">
-          <button type="submit" class="show">
-            ПОКАЗАТЬ
-          </button>
-        </form>
+            </div>
+            <input type="range" min="0" max="3000" step="1000">
+            <button type="submit" class="show">
+              ПОКАЗАТЬ
+            </button>
+          </form>
         </div>
 
         <form class="found">
@@ -140,10 +140,10 @@
           <p class="hotel-name">
             <strong> AMARA RESORT & SPA </strong>
           </p>
-          <img src="star.png" width="19" height="17" alt="4 звезды">
-          <img src="star.png" width="19" height="17" alt="#">
-          <img src="star.png" width="19" height="17" alt="#">
-          <img src="star.png" width="19" height="17" alt="#">
+          <img src="img/star.png" width="19" height="17" alt="4 звезды">
+          <img src="img/star.png" width="19" height="17" alt="#">
+          <img src="img/star.png" width="19" height="17" alt="#">
+          <img src="img/star.png" width="19" height="17" alt="#">
           <p>
             ГОСТИНИЦА ОТ 4000 Р.
           </p>
@@ -159,9 +159,9 @@
           <p class="hotel-name">
             <strong> DESERT QUAIL INN </strong>
           </p>
-          <img src="star.png" width="19" height="17" alt="3 звезды">
-          <img src="star.png" width="19" height="17" alt="#">
-          <img src="star.png" width="19" height="17" alt="#">
+          <img src="img/star.png" width="19" height="17" alt="3 звезды">
+          <img src="img/star.png" width="19" height="17" alt="#">
+          <img src="img/star.png" width="19" height="17" alt="#">
           <p>
             МОТЕЛЬ ОТ 3000 Р.
           </p>
@@ -177,8 +177,8 @@
           <p class="hotel-name">
             <strong> VILLAS AT POCO DIABLO </strong>
           </p>
-          <img src="star.png" width="19" height="17" alt="2 звезды">
-          <img src="star.png" width="19" height="17" alt="#">
+          <img src="img/star.png" width="19" height="17" alt="2 звезды">
+          <img src="img/star.png" width="19" height="17" alt="#">
           <p>
             АПАРТАМЕНТЫ ОТ 2000 Р.
           </p>
@@ -192,32 +192,42 @@
 
 
       <footer class="page-footer">
+        <div class="footer-info">
         <p>
           #VISITSEDONA
           <br>
           ТЕЛ:
           <a href="tel:+74956660266">+7(495) 666-02-66</a>
         </p>
+        </div>
         <ul class="social">
           <li>
-            <a href="twitter.com">
+          <div class="footer-info">
+            <a class="social-button" href="twitter.com">
               <img src="img/f-twitter.svg" width="17" height="17" alt="Twitter" aria-label="Twitter page">
             </a>
+            </div>
           </li>
           <li>
-            <a href="facebook.com">
+          <div class="footer-info">
+            <a class="social-button" href="facebook.com">
               <img src="img/f-fb-icon.svg" width="12" height="22" alt="Facebook" aria-label="Facebook page">
             </a>
+            </div>
           </li>
           <li>
-            <a href="youtube.com">
+          <div class="footer-info">
+            <a class="social-button" href="youtube.com">
               <img src="img/f-youtube.svg" width="20" height="16" alt="YouTube" aria-label="YouTube channel">
             </a>
+            </div>
           </li>
           <li>
+          <div class="footer-info">
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy"> WEBSITE BY
               <img src="img/f-logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy">
             </a>
+          </div>
           </li>
         </ul>
       </footer>
