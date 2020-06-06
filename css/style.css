@@ -3,6 +3,7 @@
   --basic-brown-text: #333333;
   --basic-gray-light: #f2f2f2;
   --basic-gray-background: #666666;
+  --basic-gray-line: #e5e5e5;
   --gray-active: #bdbbbc;
   --basic-blue-light: #81b3d2;
   --basic-blue: #669ec0;
@@ -19,16 +20,22 @@
 body {
   background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
 }
-.page-header { 
-color: var(--basic-black);
-font-family: PT Sans, Arial, sans-serif;
-font-size: 14px;
-font-weight: bold;
-line-height: 26px;
-padding: 0 1px;
-text-align: center;
-text-transform: uppercase;
+
+a {
+  text-decoration: none;
 }
+
+.page-header {
+  color: var(--basic-black);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .navigation {
   list-style-type: none;
   display: flex;
@@ -36,7 +43,55 @@ text-transform: uppercase;
   flex-direction: row;
   align-content: center;
   align-items: center;
-  }
+}
+
+.greeting {
+  width: 457;
+  display: flex;
+  justify-content: center;
+}
+
+.truetown {
+
+  display: flex;
+
+}
+
+.truetown-text {
+  background-color: var(--basic-blue-light);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.life-in {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bridge {
+  display: flex;
+}
+
+.devil-bridge {
+  background-color: var(--basic-blue-light);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.town-features {
+  background-color: var(--basic-gray);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .search-hotel {
   color: var(--basic-black);
   font-family: PT Sans, Arial, sans-serif;
@@ -45,9 +100,20 @@ text-transform: uppercase;
   line-height: 26px;
   padding: 0 1px;
   text-align: left;
-  text-transform: uppercase; 
- }
- 
+  text-transform: uppercase;
+
+}
+
+.search-container {
+  width: 568px;
+  height: 395px;
+  left: 356px;
+  top: 2169px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
 .advantages {
   color: var(--basic-white);
   font-family: PT Sans, Arial, sans-serif;
@@ -66,26 +132,28 @@ text-transform: uppercase;
 }
 
 .town {
- color: var(--basic-black);
- background-color: var(--basic-white);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 21px;
- font-weight: bold;
- line-height: 26px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
 }
+
 .reasons {
- color: var(--basic-brown-text);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 14px;
- font-weight: normal;
- line-height: 26px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase; 
+  color: var(--basic-brown-text);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
 }
+
 .digit {
   color: var(--basic-white);
   font-family: PT Sans, Arial, sans-serif;
@@ -95,6 +163,7 @@ text-transform: uppercase;
   padding: 0 1px;
   text-align: center;
 }
+
 .touristless {
   color: var(--basic-white);
   font-family: PT Sans, Arial, sans-serif;
@@ -104,6 +173,7 @@ text-transform: uppercase;
   padding: 0 1px;
   text-align: center;
 }
+
 .title {
   color: var(--basic-black);
   font-family: PT Sans, Arial, sans-serif;
@@ -114,6 +184,7 @@ text-transform: uppercase;
   text-align: center;
   text-transform: uppercase;
 }
+
 .description {
   color: var(--basic-brown-text);
   font-family: PT Sans, Arial, sans-serif;
@@ -124,17 +195,19 @@ text-transform: uppercase;
   text-align: center;
   text-transform: uppercase;
 }
+
 .interested {
-color: var(--basic-black);
-background-color: var(--basic-white);
-font-family: PT Sans, Arial, sans-serif;
-font-size: 30px;
-font-weight: bold;
-line-height: 24px;
-padding: 0 1px;
-text-align: center;
-text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
 }
+
 .order {
   color: var(--basic-brown-text);
   font-family: PT Sans, Arial, sans-serif;
@@ -144,78 +217,91 @@ text-transform: uppercase;
   padding: 0 1px;
   text-align: center;
 }
+
 .arriving {
- color: var(--basic-brown-text);
- background-color: var(--basic-white);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 14px;
- font-weight: normal;
- line-height: 24px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase; 
+  color: var(--basic-brown-text);
+  background-color: var(--basic-white);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .search-inn {
- color: var(--basic-white);
- background-color: var(--basic-brown-light);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 21px;
- font-weight: bold;
- line-height: 26px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-brown-light);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  outline: 1px solid #766357;
+  width: 568px;
+  height: 86px;
+  display: block;
 }
+
 .find {
- color: var(--basic-white);
- background-color: var(--basic-blue-light);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 21px;
- font-weight: bold;
- line-height: 26px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Подвал */
 .page-footer {
- color: var(--basic-black);
- background-color: var(--basic-white);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 21px;
- font-weight: bold;
- line-height: 26px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase;
- display: flex;
- flex-direction: row;
- align-items: baseline;
- justify-content: space-around;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
 }
+
 .social {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: space-between;
   align-content: center;
   margin: 10px;
 }
+
 .academy {
- color: var(--basic-black);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 14px;
- font-weight: normal;
- line-height: 26px;
- padding: 0 1px;
- text-align: left;
- text-transform: uppercase; 
+  color: var(--basic-black);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 /* Контент для взрослых, он же - внутренняя страница с отелями */
+.checkbox-choice {
+  background-color: var(--basic-gray);
+  display: flex;
+}
+
 .infrastructure {
   color: var(--basic-white);
   font-family: PT Sans, Arial, sans-serif;
@@ -224,8 +310,9 @@ text-transform: uppercase;
   line-height: 21px;
   padding: 0 1px;
   text-align: left;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
+
 .housing {
   color: var(--basic-white);
   font-family: PT Sans, Arial, sans-serif;
@@ -234,18 +321,24 @@ text-transform: uppercase;
   line-height: 21px;
   padding: 0 1px;
   text-align: left;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
+
 .sort {
+  list-style-type: none;
   font-size: 16px;
   font-weight: bold;
 }
+
 .price-range-title {
+  color: var(--basic-white);
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
 }
+
 .price-range {
+  color: var(--basic-white);
   position: relative;
   height: 36px;
   margin-bottom: 20px;
@@ -253,6 +346,7 @@ text-transform: uppercase;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
+
 .minimal,
 .maximal {
   display: inline-block;
@@ -261,6 +355,7 @@ text-transform: uppercase;
   vertical-align: top;
   cursor: pointer;
 }
+
 .show {
   color: var(--basic-white);
   font-family: PT Sans, Arial, sans-serif;
@@ -269,38 +364,56 @@ text-transform: uppercase;
   line-height: 21px;
   padding: 0 1px;
   text-align: center;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
+
 .found {
+  list-style-type: none;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-.container { 
-  width: 1200px; 
-  margin: 0 auto; 
+
+.found-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
   box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
+
 .inner {
- color: var(--basic-brown-text);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 14px;
- font-weight: normal;
- line-height: 21px;
- padding: 0 1px;
- text-align: left;
- text-transform: uppercase; 
- 
+  color: var(--basic-brown-text);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  outline: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 .hotel-name {
- color: var(--basic-black);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 21px;
- font-weight: bold;
- line-height: 26px;
- padding: 0 1px;
- text-align: left;
- text-transform: uppercase;
+  color: var(--basic-black);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .rating {
@@ -312,41 +425,47 @@ text-transform: uppercase;
   line-height: 21px;
   padding: 0 1px;
   text-align: center;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   box-sizing: border-box;
   outline: 1px solid #f2f2f2;
   width: 110px;
   height: 27px;
-} 
+}
 
 .details {
- color: var(--basic-white);
- background-color: var(--basic-blue-light);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 14px;
- font-weight: bold;
- line-height: 21px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase;
- text-decoration: none;
- box-sizing: border-box;
- outline: 1px solid #81b3d2; 
- width: 110px;
- height: 27px;
- display: block;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: 1px solid #81b3d2;
+  width: 110px;
+  height: 27px;
+  display: block;
 }
+
 .booking {
- color: var(--basic-white);
- background-color: var(--basic-brown-light);
- font-family: PT Sans, Arial, sans-serif;
- font-size: 14px;
- font-weight: bold;
- line-height: 21px;
- padding: 0 1px;
- text-align: center;
- text-transform: uppercase;
- box-sizing: border-box;
- width: 142px;
- height: 27px;
+  color: var(--basic-white);
+  background-color: var(--basic-brown-light);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 142px;
+  height: 27px;
+}
+
+img .inner {
+  width: 135px;
+  float: left;
 }
