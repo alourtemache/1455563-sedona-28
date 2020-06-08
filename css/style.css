@@ -35,23 +35,28 @@ a {
   padding: 0 1px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+}
+.main-page-logo {
+  position: absolute top;
+  min-width: 138px;
+  min-height: 70px;
+  margin: 0 auto;
 }
 
 .navigation {
-  background-color: var(--basic-white);
+  background: var(--basic-white);
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-content: center;
   align-items: center;
+  position: absolute top;
 }
 
 .greeting {
-  width: 457px;
-  display: flex;
-  justify-content: center;
-  
+  text-align: center;
 }
 
 .truetown {
@@ -66,7 +71,12 @@ a {
   align-content: center;
   align-items: center;
 }
-
+.advantages {
+  text-align: center;
+}
+.icon {
+  text-align: center;
+}
 .life-in {
   display: flex;
   justify-content: space-around;
@@ -92,7 +102,7 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-
+/*Здесь надо доделать флекс6 а то все съехало */
 .search-hotel {
   color: var(--basic-black);
   font-family: PT Sans, Arial, sans-serif;
@@ -100,19 +110,23 @@ a {
   font-weight: bold;
   line-height: 26px;
   padding: 0 1px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
-
+  display: block;
+  position: absolute center;
+  
 }
 
 .search-container {
   width: 568px;
   height: 395px;
-  left: 356px;
-  top: 2169px;
-
-  background: #FFFFFF;
+  background: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: space-around;
+  
 }
 
 .advantages {
@@ -280,7 +294,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 
 }
 .social {
@@ -306,23 +320,29 @@ a {
 }
 
 .academy {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.academy-logo-title {
   color: var(--basic-black);
   font-family: PT Sans, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
   padding: 0 1px;
-  text-align: left;
   text-transform: uppercase;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 /* Контент для взрослых, он же - внутренняя страница с отелями */
 .checkbox-choice {
-  background-color: none;
+  background: none;
   display: flex;
   justify-content: space-around;
-  
-  
 }
 
 .infrastructure {
@@ -404,13 +424,11 @@ a {
   align-content: space-between;
   justify-content: flex-start;
   padding-left: 77px;
-
 }
 
 .found-list {
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
+  display: inline-block;
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-between;
@@ -422,27 +440,6 @@ a {
   margin: 0 auto;
   box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
-
-.inner {
-  color: var(--basic-brown-text);
-  background-color: var(--basic-white);
-  font-family: PT Sans, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
-  padding: 31px 73px;
-  text-align: left;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  outline: 1px solid #e5e5e5;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .hotel-name {
   color: var(--basic-black);
   font-family: PT Sans, Arial, sans-serif;
@@ -453,7 +450,118 @@ a {
   text-align: left;
   text-transform: uppercase;
 }
+/* new */
+.found-result {
 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.result-inn {
+  padding: 30px 0 0 72px;
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  box-sizing: content-box;
+  min-height: 90px;
+  margin-bottom: 31px;
+}
+.result-inn img {
+  margin-right: 30px;
+}
+.hotel-name {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+.result-inn,
+.hotel-name {
+  margin-right: 74px;
+  margin-left: auto;
+}
+.hotel-link {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+.hotel-link:hover,
+.hotel-link:focus {
+  color: var(--basic-blue-light);
+}
+.hotel-link:active {
+  color: var(--basic-black-opacity);
+}
+.hotel-link h2 {
+  margin-bottom: 10px;
+}
+.hotel-price {
+  margin-bottom: 12px;
+  color: var(--basic-brown-text);
+}
+.hotel-price span {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+.hotel-rating {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.details,
+.booking {
+  color: var(--basic-white);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  height: 27px;
+  padding: 0 17px;
+  padding-top: 3px;
+  margin-right: 2px;
+  
+}
+.details {
+  background-color: var(--basic-blue-light);
+}
+.details:hover,
+.details:focus {
+  background-color: var(--basic-blue);
+}
+.details:active {
+  background-color: var(--basic-blue-dark);
+  color: var(--basic-white-opacity);
+}
+.booking {
+  background-color: var(--basic-brown-light);
+}
+.booking {
+  background-color: var(--basic-brown-light);
+}
+.booking:hover,
+.booking:focus {
+  background-color: var(--basic-brown);
+}
+.booking:active {
+  background-color: var(--basic-brown-dark);
+  color: var(--basic-white-opacity);
+}
+.rating-stars {
+display: flex;
+justify-content: flex-end;
+}
+.one-star {
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../img/star.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
 .rating {
   color: var(--basic-gray-background);
   background-color: var(--basic-gray-light);
@@ -468,45 +576,8 @@ a {
   outline: 1px solid #f2f2f2;
   width: 110px;
   height: 27px;
+  display: inline-block;
+  align-items: flex-end;
 }
-
-.details {
-  color: var(--basic-white);
-  background-color: var(--basic-blue-light);
-  font-family: PT Sans, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 21px;
-  padding: 0 1px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-sizing: border-box;
-  outline: 1px solid #81b3d2;
-  width: 110px;
-  height: 27px;
-  display: block;
-}
-
-.booking {
-  color: var(--basic-white);
-  background-color: var(--basic-brown-light);
-  font-family: PT Sans, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 21px;
-  padding: 0 1px;
-  text-align: center;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  width: 142px;
-  height: 27px;
-}
-
-img .inner {
-  width: 135px;
-  float: left;
-}
-
 
 
