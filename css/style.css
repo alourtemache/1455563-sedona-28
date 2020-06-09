@@ -26,7 +26,6 @@ a {
   text-decoration: none;
   color: var(--basic-black);
 }
-
 .page-header {
   color: var(--basic-black);
   font-family: PT Sans, Arial, sans-serif;
@@ -39,7 +38,6 @@ a {
   position: relative;
 }
 .main-page-logo {
-  position: absolute;
   min-width: 138px;
   min-height: 70px;
   margin: 0 auto;
@@ -49,15 +47,28 @@ a {
 .navigation {
   background: var(--basic-white);
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 17px;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-content: center;
   align-items: center;
-  position: absolute top;
-
 }
-
+.navigation li {
+  width: 240px;
+  box-sizing: border-box;
+}
+.navigation li:nth-child(1) {
+  padding-left: 72px;
+}
+.navigation li:nth-child(2) {
+  margin-right: 240px;
+  text-align: center;
+}
+.navigation li:nth-child(4) {
+  padding-right: 72px;
+  text-align: right;
+}
 .greeting {
   text-align: center;
   position: relative;
