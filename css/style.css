@@ -19,6 +19,7 @@
 
 body {
   background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
+  
 }
 
 a {
@@ -38,10 +39,11 @@ a {
   position: relative;
 }
 .main-page-logo {
-  position: absolute top;
+  position: absolute;
   min-width: 138px;
   min-height: 70px;
   margin: 0 auto;
+  position: absolute;
 }
 
 .navigation {
@@ -53,10 +55,14 @@ a {
   align-content: center;
   align-items: center;
   position: absolute top;
+
 }
 
 .greeting {
   text-align: center;
+  position: relative;
+  top: 40px;
+  padding-bottom: 80px;
 }
 
 .truetown {
@@ -76,6 +82,8 @@ a {
 }
 .icon {
   text-align: center;
+  padding-top: 64px;
+  padding-bottom: 82px;
 }
 .life-in {
   display: flex;
@@ -102,6 +110,10 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+.town-features-item {
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
 /*Здесь надо доделать флекс6 а то все съехало */
 .search-hotel {
   color: var(--basic-black);
@@ -109,23 +121,29 @@ a {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
-  padding: 0 1px;
+  padding: 0 316px;
   text-align: center;
   text-transform: uppercase;
   display: block;
-  position: absolute center;
-  
+  position: absolute;
 }
-
+.search-inn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 30px;
+}
 .search-container {
   width: 568px;
   height: 395px;
   background: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   display: flex;
+  flex-direction: column;
   position: absolute;
-  justify-content: center;
-  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 55px;
   
 }
 
@@ -154,6 +172,8 @@ a {
   font-weight: bold;
   line-height: 26px;
   padding: 0 1px;
+  padding-top: 42px;
+  padding-bottom: 51px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -219,6 +239,7 @@ a {
   font-weight: bold;
   line-height: 24px;
   padding: 0 1px;
+  padding-top: 57px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -241,6 +262,7 @@ a {
   font-weight: normal;
   line-height: 24px;
   padding: 0 1px;
+  padding-bottom: 78px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -343,6 +365,9 @@ a {
   background: none;
   display: flex;
   justify-content: space-around;
+  position: relative;
+  top: 40px;
+  padding-bottom: 80px;
 }
 
 .infrastructure {
@@ -407,11 +432,12 @@ a {
 
 .show {
   color: var(--basic-white);
+  background: none;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
-  padding: 0 1px;
+  padding: 7px 35px 8px 36px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -423,16 +449,46 @@ a {
   display: flex;
   align-content: space-between;
   justify-content: flex-start;
-  padding-left: 77px;
+  position: relative;
+  padding-top: 29px;
+  padding-left: 73px;
+}
+.search-inn-result {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  
+}
+.found-type {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  display: inline-block;
+  align-items: center;
+  padding-right: 40px;
 }
 
 .found-list {
   list-style-type: none;
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-between;
   align-items: stretch;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
 }
 
 .container {
@@ -458,8 +514,10 @@ a {
   padding: 0;
 }
 .result-inn {
-  padding: 30px 0 0 72px;
+  padding: 30px 0 0 73px;
   display: flex;
+  justify-content: flex-start;
+  background-color: var(--basic-white);
   border-top: 1px solid #e5e5e5;
   box-sizing: content-box;
   min-height: 90px;
@@ -472,6 +530,11 @@ a {
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
+align-items: center;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
 }
 .result-inn,
 .hotel-name {
@@ -500,6 +563,9 @@ justify-content: flex-end;
   display: inline-block;
   vertical-align: top;
   width: 120px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 .hotel-rating {
   align-items: flex-end;
@@ -569,7 +635,7 @@ justify-content: flex-end;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
-  padding: 0 1px;
+  padding: 3px 12px 3px 15px;
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -579,5 +645,4 @@ justify-content: flex-end;
   display: inline-block;
   align-items: flex-end;
 }
-
 
