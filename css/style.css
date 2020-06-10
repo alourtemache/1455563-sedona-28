@@ -19,7 +19,7 @@
 
 body {
   background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
-  
+
 }
 
 a {
@@ -38,10 +38,8 @@ a {
   position: relative;
 }
 .main-page-logo {
-  min-width: 138px;
-  min-height: 70px;
-  margin: 0 auto;
   position: absolute;
+  left: 45%;
 }
 
 .navigation {
@@ -138,12 +136,6 @@ a {
   display: block;
   position: absolute;
 }
-.search-inn {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding-top: 30px;
-}
 .search-container {
   width: 568px;
   height: 395px;
@@ -155,7 +147,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-left: 55px;
-  
+
 }
 
 .advantages {
@@ -277,22 +269,21 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
-
+.search-wrapper {
+  width: auto;
+  text-align: center;
+  padding: 0 316px;
+}
 .search-inn {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-decoration: none;
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
-  font-family: PT Sans, Arial, sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  padding: 0 1px;
-  text-align: center;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  outline: 1px solid #766357;
-  width: 568px;
-  height: 86px;
-  display: block;
 }
 
 .find {
@@ -320,7 +311,7 @@ a {
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-around;
 }
 .footer-info {
@@ -359,6 +350,12 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.academy a {
+  display: flex;
+  align-items: center;
+}
+
 .academy-logo-title {
   color: var(--basic-black);
   font-family: PT Sans, Arial, sans-serif;
@@ -403,7 +400,7 @@ a {
   text-align: left;
   text-transform: uppercase;
   flex-grow: 1;
-  
+
 }
 
 .sort {
@@ -413,7 +410,7 @@ a {
 }
 .price-choice {
   flex-grow: 2;
-  
+
 }
 .price-range-title {
   color: var(--basic-white);
@@ -465,7 +462,6 @@ a {
   padding-left: 73px;
 }
 .search-inn-result {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -474,10 +470,10 @@ a {
   align-items: center;
   text-transform: uppercase;
   color: var(--basic-black);
-  
+  font-family: PT Sans, Arial, sans-serif;
+
 }
 .found-type {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -485,6 +481,7 @@ a {
   display: inline-block;
   align-items: center;
   padding-right: 40px;
+  font-family: PT Sans, Arial, sans-serif;
 }
 
 .found-list {
@@ -493,29 +490,18 @@ a {
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-between;
-  align-items: stretch;
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   align-items: center;
+  font-family: PT Sans, Arial, sans-serif;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
-}
-.hotel-name {
-  color: var(--basic-black);
-  font-family: PT Sans, Arial, sans-serif;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-  padding: 0 1px;
-  text-align: left;
-  text-transform: uppercase;
 }
 /* new */
 .found-result {
@@ -538,19 +524,16 @@ a {
   margin-right: 30px;
 }
 .hotel-name {
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-}
-.result-inn,
-.hotel-name {
-  margin-right: 74px;
-  margin-left: auto;
+  width: 781px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  font-family: PT Sans, Arial, sans-serif;
+  padding: 0 1px;
+  text-align: left;
+  text-transform: uppercase;
 }
 .hotel-link {
   text-decoration: none;
@@ -564,10 +547,13 @@ line-height: 26px;
   color: var(--basic-black-opacity);
 }
 .hotel-link h2 {
-  margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 21px;
 }
 .hotel-price {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: var(--basic-brown-text);
 }
 .hotel-price span {
@@ -579,8 +565,12 @@ line-height: 26px;
   line-height: 21px;
 }
 .hotel-rating {
-  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  height: 90px;
+  width: 110px;
+  text-align: right;
 }
 .details,
 .booking {
@@ -589,7 +579,6 @@ line-height: 26px;
   font-size: 14px;
   font-weight: bold;
   line-height: 21px;
-  padding: 0 1px;
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -599,7 +588,7 @@ line-height: 26px;
   padding: 0 17px;
   padding-top: 3px;
   margin-right: 2px;
-  
+
 }
 .details {
   background-color: var(--basic-blue-light);
@@ -656,4 +645,5 @@ justify-content: flex-end;
   display: inline-block;
   align-items: flex-end;
 }
+
 
