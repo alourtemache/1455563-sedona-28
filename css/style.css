@@ -123,32 +123,6 @@ a {
   padding-top: 47px;
   padding-bottom: 54px;
 }
-/*Здесь надо доделать флекс6 а то все съехало */
-.search-hotel {
-  color: var(--basic-black);
-  font-family: PT Sans, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 26px;
-  padding: 0 316px;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  position: absolute;
-}
-.search-container {
-  width: 568px;
-  height: 395px;
-  background: var(--basic-white);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 55px;
-
-}
 
 .advantages {
   color: var(--basic-white);
@@ -269,6 +243,31 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+/*Здесь надо доделать флекс6 а то все съехало */
+.search-hotel {
+  color: var(--basic-black);
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 0 316px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.search-container {
+  width: auto;
+  height: 395px;
+  background: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 55px;
+  padding-top: 55px;
+  position: relative;
+}
 .search-wrapper {
   width: auto;
   text-align: center;
@@ -296,8 +295,29 @@ a {
   padding: 0 1px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  width: 458px;
+  height: 58px;
+  margin: 55px;
 }
-
+.data-field {
+  background-color: var(--basic-gray-light);
+}
+.date-field {
+width: 346px;
+height: 38px;
+}
+.number-field {
+width: 114px;
+height: 38px;
+}
+.visitors {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 /* Подвал */
 .page-footer {
   color: var(--basic-black);
@@ -319,7 +339,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 .social {
   list-style-type: none;
@@ -377,7 +396,38 @@ a {
   top: 40px;
   padding-bottom: 80px;
 }
-
+.option {
+  display: block;
+  margin-top: 23px;
+}
+.check {
+padding-left: 40px;
+}
+.checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.check-add {
+  position: absolute;
+  margin-left: -40px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+}
+.checkbox:checked + .check-add {
+  background-image: url("../img/checkbox-on.svg");
+}
+.checkbox:disabled + .check-add {
+  background-image: url("../img/b-checkbox-off.svg");
+}
+.checkbox:checked:disabled + .check-add {
+  background-image: url("../img/b-checkbox-on.svg");
+}
+.check-list {
+  list-style-type: none;
+}
 .infrastructure {
   color: var(--basic-white);
   font-family: PT Sans, Arial, sans-serif;
@@ -498,12 +548,13 @@ a {
   font-family: PT Sans, Arial, sans-serif;
 }
 
+
+/* new */
 .container {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
-/* new */
 .found-result {
 
   list-style: none;
@@ -645,5 +696,4 @@ justify-content: flex-end;
   display: inline-block;
   align-items: flex-end;
 }
-
 
