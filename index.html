@@ -193,18 +193,18 @@
               <label for="checkin">
                 ДАТА ЗАЕЗДА:
               </label>
-              <input type="date" id="checkin" required>
+              <input type="date" id="checkin" class="data-field date-field" required>
               <label for="checkin">
-                <img src="calendar.svg" alt="Календарь">
+                <img src="img/calendar.svg" alt="Календарь">
               </label>
             </div>
             <div class="check-out">
               <label for="checkout">
                 ДАТА ВЫЕЗДА:
               </label>
-              <input type="date" id="checkout" required>
+              <input type="date" id="checkout" class="data-field date-field" required>
               <label for="checkout">
-                <img src="calendar.svg" alt="Календарь">
+                <img src="img/calendar.svg" alt="Календарь">
               </label>
             </div>
 
@@ -212,14 +212,12 @@
               <label for="grownups">
                 ВЗРОСЛЫЕ:
               </label>
-              <input type="number" id="grownups" min="1" max="20" step="1">
-            </div>
+              <input type="number" id="grownups" class="data-field number-field" min="1" max="20" step="1">
 
-            <div class="kids">
               <label for="children">
                 ДЕТИ:
               </label>
-              <input type="number" id="children" min="0" max="19" step="1">
+              <input type="number" id="children" class="data-field number-field" min="0" max="19" step="1">
             </div>
             <button type="submit" class="find"> НАЙТИ </button>
           </div>
@@ -266,4 +264,5 @@
   </body>
 
 </html>
+
 
