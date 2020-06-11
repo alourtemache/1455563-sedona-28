@@ -36,8 +36,9 @@
       </header>
 
       <main class="inner-page">
-        <div class="checkbox-choice">
-          <form class="infrastructure">
+        <form class="checkbox-choice">
+          
+          <div class="infrastructure">
             <ul class="check-list">
               <li class="sort">
                 ИНФРАСТРУКТУРА:
@@ -64,8 +65,9 @@
                 </label>
               </li>
             </ul>
-          </form>
-          <form class="housing">
+          </div>
+
+          <div class="housing">
             <ul class="check-list">
               <li class="sort">
                 ТИП ЖИЛЬЯ:
@@ -92,30 +94,29 @@
                 </label>
               </li>
             </ul>
-          </form>
-          <form>
-            <p class="price-range-title">
-              СТОИМОСТЬ В СУТКИ (Р):
-            </p>
-            <br>
-            <div class="price-range">
-              <label for="minimal" class="minimal">
-                ОТ
-                <input type="number" name="minimal" id="minimal" value="0">
-              </label>
-              <label for="maximum" class="maximal">
-                ДО
-                <input type="number" name="maximum" id="maximum" value="3000">
-              </label>
-            </div>
-            <input type="range" min="0" max="3000" step="1000">
+          </div>
+
+            <div class="filter">
+      <div class="price-range-title">СТОИМОСТЬ В СУТКИ (Р):</div>
+      <div class="price-control">
+        <label class="minimal">ОТ <input type="number" name="min-price" value="0"></label>
+        <label class="maximum">ДО <input type="number" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-control">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
             <button type="submit" class="show">
               ПОКАЗАТЬ
             </button>
-          </form>
         </div>
+        </form>
 
-        <form class="found">
+        <form>
+        <div class="found">
           <h3 class="search-inn-result">
             НАЙДЕНО:
           </h3>
@@ -138,7 +139,12 @@
                 ПО РЕЙТИНГУ
               </a>
             </li>
+            <li class="found-type up-down">
+              <a href="#" width="11" height="10" alt="По возрастанию"> <img src="img/icon-up.svg"> </a>
+              <a href="#" width="11" height="10" alt="По убыванию"> <img src="img/icon-down.svg"> </a>
+            </li>
           </ul>
+          </div>
         </form>
 
         <ul class="found-result">
@@ -265,5 +271,4 @@
   </body>
 
 </html>
-
 
