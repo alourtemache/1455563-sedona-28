@@ -11,7 +11,7 @@
 
   </head>
 
-  <body>
+  <body class="inner">
     <div class="container">
       <header class="page-header">
         <a href="index.html" class="main-page-logo">
@@ -20,16 +20,16 @@
         <nav>
           <ul class="navigation">
             <li>
-              <a href="#"> ИНФОРМАЦИЯ </a>
+              <a href="#" class="nav-link"> ИНФОРМАЦИЯ </a>
             </li>
             <li>
-              <a href="#"> ФОТО И ВИДЕО </a>
+              <a href="#" class="nav-link"> ФОТО И ВИДЕО </a>
             </li>
             <li>
-              <a href="#">КАРТА ШТАТА</a>
+              <a href="#" class="nav-link">КАРТА ШТАТА</a>
             </li>
             <li>
-              <a href="inner.html">ГОСТИНИЦЫ </a>
+              <a href="inner.html" class="nav-link">ГОСТИНИЦЫ </a>
             </li>
           </ul>
         </nav>
@@ -37,7 +37,7 @@
 
       <main class="inner-page">
         <form class="checkbox-choice">
-          
+
           <div class="infrastructure">
             <ul class="check-list">
               <li class="sort">
@@ -45,22 +45,22 @@
               </li>
               <li>
                 <label for="pool" class="check option">
-                <input type="checkbox" class="checkbox" id="pool" checked>
-                <span class="check-add"></span>
+                  <input type="checkbox" class="checkbox" id="pool" checked>
+                  <span class="check-add"></span>
                   БАССЕЙН
                 </label>
               </li>
               <li>
                 <label for="parking" class="check option">
-                <input type="checkbox" class="checkbox" id="parking">
-                <span class="check-add"></span>
+                  <input type="checkbox" class="checkbox" id="parking">
+                  <span class="check-add"></span>
                   ПАРКОВКА
                 </label>
               </li>
               <li>
                 <label for="wifi" class="check option">
-                <input type="checkbox" class="checkbox" id="wifi">
-                <span class="check-add"></span>
+                  <input type="checkbox" class="checkbox" id="wifi">
+                  <span class="check-add"></span>
                   WI-FI
                 </label>
               </li>
@@ -74,76 +74,84 @@
               </li>
               <li>
                 <label for="inn-hotel" class="check option">
-                <input type="checkbox" class="checkbox" id="inn-hotel" checked>
-                <span class="check-add"></span>
+                  <input type="checkbox" class="checkbox" id="inn-hotel" checked>
+                  <span class="check-add"></span>
                   ГОСТИНИЦА
                 </label>
               </li>
               <li>
                 <label for="motel" class="check option">
-                <input type="checkbox" class="checkbox" id="motel" checked>
-                <span class="check-add"></span>
+                  <input type="checkbox" class="checkbox" id="motel" checked>
+                  <span class="check-add"></span>
                   МОТЕЛЬ
                 </label>
               </li>
               <li>
                 <label for="apartment" class="check option">
-                <input type="checkbox" class="checkbox" id="apartment" checked>
-                <span class="check-add"></span>
+                  <input type="checkbox" class="checkbox" id="apartment" checked>
+                  <span class="check-add"></span>
                   АПАРТАМЕНТЫ
                 </label>
               </li>
             </ul>
           </div>
 
-            <div class="filter">
-      <div class="price-range-title">СТОИМОСТЬ В СУТКИ (Р):</div>
-      <div class="price-control">
-        <label class="minimal">ОТ <input type="number" name="min-price" value="0"></label>
-        <label class="maximum">ДО <input type="number" name="max-price" value="3000"></label>
-      </div>
-      <div class="range-control">
-        <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="range-toggle range-toggle-min"></div>
-        <div class="range-toggle range-toggle-max"></div>
-      </div>
+          <div class="filter">
+            <div class="price-range-title">СТОИМОСТЬ В СУТКИ (Р):</div>
+            <div class="price-control">
+              <label class="minimal">ОТ <input type="number" name="min-price" value="0"></label>
+              <label class="maximum">ДО <input type="number" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-control">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
             <button type="submit" class="show">
               ПОКАЗАТЬ
             </button>
-        </div>
+          </div>
         </form>
 
         <form>
-        <div class="found">
-          <h3 class="search-inn-result">
-            НАЙДЕНО:
-          </h3>
-          <ul class="found-list">
-            <li class="found-type found-sorting">
-              СОРТИРОВКА:
-            </li>
-            <li class="found-type">
-              <a href="#">
-                ПО ЦЕНЕ
-              </a>
-            </li>
-            <li class="found-type">
-              <a href="#">
-                ПО ТИПУ
-              </a>
-            </li>
-            <li class="found-type">
-              <a href="#">
-                ПО РЕЙТИНГУ
-              </a>
-            </li>
-            <li class="found-type up-down">
-              <a href="#" width="11" height="10" alt="По возрастанию"> <img src="img/icon-up.svg"> </a>
-              <a href="#" width="11" height="10" alt="По убыванию"> <img src="img/icon-down.svg"> </a>
-            </li>
-          </ul>
+          <div class="found">
+            <h3 class="search-inn-result">
+              НАЙДЕНО: 3
+            </h3>
+            <ul class="found-list">
+              <li class="found-type">
+                СОРТИРОВКА:
+              </li>
+              <li class="found-type">
+                <a href="#" class="found-price">
+                  ПО ЦЕНЕ
+                </a>
+              </li>
+              <li class="found-type">
+                <a href="#" class="found-typing">
+                  ПО ТИПУ
+                </a>
+              </li>
+              <li class="found-type">
+                <a href="#" class="found-rating">
+                  ПО РЕЙТИНГУ
+                </a>
+              </li>
+              <li class="found-type up-down">
+               <span class="up-button">
+                <a href="#">
+                  <img src="img/icon-up.svg" width="11" height="10" alt="По возрастанию">
+                </a>
+               </span>
+               <span class="down-button">
+                <a href="#">
+                  <img src="img/icon-down.svg"  width="11" height="10" alt="По убыванию">
+                </a>
+               </span>
+              </li>
+            </ul>
           </div>
         </form>
 
@@ -271,4 +279,3 @@
   </body>
 
 </html>
-
