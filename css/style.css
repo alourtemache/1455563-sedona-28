@@ -22,14 +22,19 @@
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
 }
 
-body {
-  background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
-
-}
-
 a {
   text-decoration: none;
   color: var(--basic-black);
+}
+
+.index {
+  background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
+
+}
+.inner {
+  background: #ffffff url("../img/background.png") no-repeat top center;
+  
+  
 }
 
 .page-header {
@@ -86,6 +91,16 @@ a {
 .navigation li:nth-child(4) {
   padding-right: 72px;
   text-align: right;
+}
+
+.nav-link:hover {
+  color: var(--basic-blue-light);
+}
+.nav-link:focus {
+  color: var(--basic-black-opacity);
+}
+.nav-link:active {
+  color: var(--basic-brown-light);
 }
 
 .greeting {
@@ -284,6 +299,7 @@ a {
   color: var(--basic-black);
   text-align: left;
   background-color: var(--basic-white);
+  display: none;
 }
 
 .search-hotel input,
@@ -529,6 +545,14 @@ input[type=number] {
   margin: 36px 3px;
 }
 
+.social-button:hover {
+  background-color: var(--basic-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-blue-dark);
+  color: var(--basic-white-opacity);
+}
 .academy {
   text-align: center;
   display: flex;
@@ -556,11 +580,10 @@ input[type=number] {
 
 /* Контент для взрослых, он же - внутренняя страница с отелями */
 .checkbox-choice {
-  background: none;
   display: flex;
   justify-content: space-around;
   position: relative;
-  top: 40px;
+  top: 10px;
   padding-bottom: 80px;
 }
 
@@ -610,10 +633,10 @@ input[type=number] {
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
-  padding: 0 1px;
   text-align: left;
   text-transform: uppercase;
   flex-grow: 1;
+  margin-left: 30px;
 }
 
 .housing {
@@ -622,11 +645,10 @@ input[type=number] {
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
-  padding: 0 1px;
   text-align: left;
   text-transform: uppercase;
   flex-grow: 1;
-
+  margin-left: -325px;
 }
 
 .sort {
@@ -638,9 +660,11 @@ input[type=number] {
 /*  Фильтр  */
 
 .filter {
+  padding-top: 10px;
   width: 330px;
   color: var(--basic-white);
   text-transform: uppercase;
+  
 }
 
 .price-range-title {
@@ -791,9 +815,11 @@ input[type=number] {
 
 .up-down {
   position: relative;
-  margin-left: 485px;
+  margin-left: 460px;
 }
-
+.up-button {
+  margin-right: 12px;
+}
 .found-list {
   list-style-type: none;
   display: flex;
@@ -808,7 +834,26 @@ input[type=number] {
   font-family: PT Sans, Arial, sans-serif;
 }
 
-
+.found-price,
+.found-typing,
+.found-rating {
+  color: var(--basic-black-opacity);
+}
+.found-price:hover,
+.found-typing:hover,
+.found-rating:hover {
+  color: var(--basic-blue-light);
+}
+.found-price:focus,
+.found-typing:focus,
+.found-rating:focus {
+  color: var(--basic-black);
+}
+.found-price:active,
+.found-typing:active,
+.found-rating:active {
+  color: var(--basic-blue-light);
+}
 /* Hotels */
 .container {
   width: 1200px;
@@ -972,7 +1017,7 @@ input[type=number] {
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
-  outline: 1px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   width: 110px;
   height: 27px;
   display: inline-block;
