@@ -31,10 +31,10 @@ a {
   background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
 
 }
-.inner {
-  background: #ffffff url("../img/background.png") no-repeat top center;
-  
-  
+.selection-block {
+  box-sizing: border-box;
+  min-height: 215px;
+  background: #ffffff url("../img/background.png") no-repeat center;
 }
 
 .page-header {
@@ -575,16 +575,17 @@ input[type=number] {
   padding: 0 1px;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: baseline;
   margin-right: 8px;
 }
 
 /* Контент для взрослых, он же - внутренняя страница с отелями */
 .checkbox-choice {
   display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: 10px;
-  padding-bottom: 80px;
+  padding: 0 72px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  width: 1056px;
 }
 
 .option {
@@ -625,6 +626,7 @@ input[type=number] {
 
 .check-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .infrastructure {
@@ -648,7 +650,7 @@ input[type=number] {
   text-align: left;
   text-transform: uppercase;
   flex-grow: 1;
-  margin-left: -325px;
+  margin-left: -280px;
 }
 
 .sort {
@@ -664,7 +666,7 @@ input[type=number] {
   width: 330px;
   color: var(--basic-white);
   text-transform: uppercase;
-  
+
 }
 
 .price-range-title {
@@ -808,6 +810,7 @@ input[type=number] {
   font-size: 12px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: baseline;
   align-items: center;
   padding-right: 40px;
   font-family: PT Sans, Arial, sans-serif;
@@ -1021,5 +1024,14 @@ input[type=number] {
   width: 110px;
   height: 27px;
   display: inline-block;
+  vertical-align: baseline;
   align-items: flex-end;
+}
+
+.footer-logo:hover path {
+  fill: var(--basic-blue-light);
+}
+
+.footer-logo:active path {
+  fill: var(--gray-active);
 }
