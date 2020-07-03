@@ -20,6 +20,7 @@
   --basic-white: #ffffff;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
+  --basic-shadow: rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -28,13 +29,13 @@ a {
 }
 
 .index {
-  background: #ffffff url("../img/001backgroundphoto.png") no-repeat top center;
+  background: var(--basic-white) url("../img/001backgroundphoto.png") no-repeat top center;
 
 }
 .selection-block {
   box-sizing: border-box;
   min-height: 215px;
-  background: #ffffff url("../img/background.png") no-repeat center;
+  background: var(--basic-white) url("../img/background.png") no-repeat center;
 }
 
 .page-header {
@@ -300,6 +301,10 @@ a {
   text-align: left;
   background-color: var(--basic-white);
   display: none;
+  box-shadow: 0px 0px 15px 5px var(--basic-shadow);
+}
+.modal-show {
+  display: block;
 }
 
 .search-hotel input,
@@ -317,7 +322,7 @@ a {
 
 .search-hotel input:focus {
   background-color: var(--basic-white);
-  border: 2px solid #e5e5e5;
+  border: 2px solid var(--basic-gray-line);
 }
 
 .search-wrapper {
@@ -392,7 +397,7 @@ a {
 }
 
 .form-wrapper {
-  background-color: white;
+  background-color: var(--basic-white);
 }
 
 .search-hotel {
@@ -497,6 +502,15 @@ input[type=number] {
   background-color: var(--basic-white);
   left: calc(50% - 285px);
 }
+.modal-show {
+  display: block;
+}
+
+/* Animations */
+.search-hotel {
+  transform: translateY(1932px);
+}
+
 
 /* Подвал */
 
@@ -681,7 +695,7 @@ input[type=number] {
   height: 36px;
   margin-bottom: 20px;
   font-size: 0;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
 
@@ -740,9 +754,9 @@ input[type=number] {
   width: 4px;
   height: 4px;
   background: var(--basic-beige);
-  border: 8px solid #ffffff;
+  border: 8px solid var(--basic-white);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 var(--basic-shadow);
   cursor: pointer;
 }
 
@@ -767,7 +781,7 @@ input[type=number] {
   color: var(--basic-white);
   text-transform: uppercase;
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
   cursor: pointer;
 }
@@ -861,7 +875,7 @@ input[type=number] {
 .container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 0px 15px 5px var(--basic-shadow);
 }
 
 .found-result {
@@ -876,7 +890,7 @@ input[type=number] {
   display: flex;
   justify-content: flex-start;
   background-color: var(--basic-white);
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--basic-gray-line);
   box-sizing: content-box;
   min-height: 90px;
   margin-bottom: 31px;
@@ -1020,7 +1034,7 @@ input[type=number] {
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--basic-gray-light);
   width: 110px;
   height: 27px;
   display: inline-block;
